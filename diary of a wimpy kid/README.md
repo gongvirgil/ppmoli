@@ -1,1 +1,1 @@
-《Diary of a Wimpy Kid》
+《Diary of a Wimpy Kid》[Start Reading](1.md)
