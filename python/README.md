@@ -4,8 +4,12 @@
 
 文件|功能描述|遇到的问题
 ---|---|---
-reverse_string.py   |   逆转字符串   |
-
+reverse_string.py   |   逆转字符串             |
+vowel_game.py       |   拉丁猪文字游戏         |
+vowel_count.py      |   统计元音字母           |
+palindrome.py       |   判断是否为回文         |
+`xxxx`              |   统计字符串中的单词数目 |
+editor.py           |   文本编辑器             |
 ## Ideas
 
 * 文本操作
