@@ -10,6 +10,7 @@ vowel_count.py      |   统计元音字母           |
 palindrome.py       |   判断是否为回文         |
 `xxxx`              |   统计字符串中的单词数目 |
 editor.py           |   文本编辑器             |
+web.py              |   web网页                |
 ## Ideas
 
 * 文本操作
