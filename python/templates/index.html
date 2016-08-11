@@ -1,6 +1,17 @@
-$def with (name)
+$def with (data)
 
-$if name:
-    I just wanted to say <em>hello</em> to $name.
+$if data['name']:
+    I just wanted to say <em>hello</em> to $data['name'].
 $else:
     <em>Hello</em>, world!
+
+
+$if data['user']:
+	$data['user']
+
+
+<form action="/" method="POST">
+	name: <input type="text" value="$data['name']" name="name"/ ><br>
+	user: <input type="text" value="$data['user']" name="username"/ >
+	<button type="submit" id="Login" name="Login">Login</button>
+</form>
