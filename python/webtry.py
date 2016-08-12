@@ -13,12 +13,44 @@ db = web.database(
 )
 render = web.template.render('templates')
 urls = (
-    '/', 'index')
+    '/count', 'count',
+    '/reset', 'reset',
+    '/login', 'login',
+    '/', 'index'
+)
 app = web.application(urls, globals())
-data = {
-    'name': '',
-    'user': ''
-}
+session = web.session.Session(
+    app,
+    web.session.DiskStore('sessions'),
+    initializer={'count': 0}
+)
+data = {}
+
+
+class count:
+    def GET(self):
+        session.count += 1
+        return session.count
+
+
+class reset:
+    def GET(self):
+        session.kill()
+        return ""
+
+
+class login:
+    def GET(self):
+        return render.login()
+
+    def POST(self):
+        post_data = web.input()
+        username = post_data['username']
+        password = post_data['password']
+        print session.count
+        print username
+        print password
+        return render.login()
 
 
 class index:

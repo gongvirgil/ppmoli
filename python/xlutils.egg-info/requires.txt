@@ -1,0 +1,20 @@
+xlrd >= 0.7.2
+xlwt >= 0.7.4
+
+[build]
+setuptools-git
+wheel
+twine
+sphinx
+pkginfo
+
+[test]
+errorhandler
+manuel
+mock
+nose
+nose-fixes
+nose-cov
+coveralls
+testfixtures
+tox
